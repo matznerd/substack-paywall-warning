@@ -1,0 +1,98 @@
+.substack-paywall-warning {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    background-color: #ff4444;
+    border-bottom: 1px solid #ff0000;
+    padding: 12px 20px;
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    animation: slideDown 0.3s ease-out;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.warning-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.warning-icon {
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.warning-text {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure the banner stays on top of Substack's sticky header */
+.substack-paywall-warning {
+    position: fixed;
+    transform: translateZ(999999px);
+}
+
+/* Adjust spacing when Substack's header is present */
+.has-header .substack-paywall-warning {
+    top: 65px;
+}
+
+/* Dark mode support - keep it red but slightly darker */
+@media (prefers-color-scheme: dark) {
+    .substack-paywall-warning {
+        background-color: #cc0000;
+        border-bottom-color: #990000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .warning-text, .warning-icon {
+        color: #ffffff;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .substack-paywall-warning {
+        padding: 10px 15px;
+    }
+    
+    .warning-content {
+        gap: 8px;
+    }
+    
+    .warning-text {
+        font-size: 13px;
+    }
+}
+
+/* Print styles - hide banner when printing */
+@media print {
+    .substack-paywall-warning {
+        display: none !important;
+    }
+}
