@@ -17,6 +17,14 @@ function removeSubscribeButton() {
 
 // Function to check if content is free
 function isFreeContent() {
+    // First check for the "PAID" indicator in the metadata
+    const metadataElements = document.querySelectorAll('._meta_h3mln_437');
+    for (const element of metadataElements) {
+        if (element.textContent.includes('Paid')) {
+            return false;
+        }
+    }
+
     const article = document.querySelector('article');
     if (!article) {
         return true;

@@ -2,7 +2,12 @@
   "manifest_version": 3,
   "name": "Substack Paywall Warning",
   "version": "1.0",
-  "description": "Shows a warning banner when a Substack article has a paywall",
+  "description": "Shows a warning banner on the top of the browser when a Substack article has a paywall",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "content_scripts": [
     {
       "matches": [
