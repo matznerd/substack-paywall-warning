@@ -1,24 +1,21 @@
 # Substack Paywall Warning
 
-A Chrome extension that shows a warning banner when a Substack article has a paywall, helping readers identify premium content before they start reading.
+> "I read something that went on for like five pages before I hit the paywall and I was absolutely furious and determined never to get suckered like that again, so I introduce to you, the Substack Paywall Warning" 
+
+-Paul Crowley
+
+This Chrome extension was commisioned by Paul Crowley to show a warning banner when a Substack article has a paywall, helping readers identify premium content before they start reading, only later hitting the paywal and unable to finish the content without subscribing. Substack uses an unually small text of "Paid" and the lack of promienence cna be considered a dark pattern. This extension seeks to remedy that.
 
 ## Features
 
 - Automatically detects Substack articles with paywalls
 - Works on both substack.com and custom domain Substack sites
-- Shows a clear, non-intrusive warning banner at the top of the page
-- Supports dark mode
-- Responsive design for all screen sizes
+- Shows a clear warning banner at the top of the page (that can be dismissed on click)
 - Real-time detection of dynamically loaded paywalls
-- Print-friendly (warning banner is hidden when printing)
 
 ## Installation
 
-1. Download or clone this repository
-2. Convert the `icon.svg` file to PNG format in the following sizes:
-   - `icon16.png` (16x16)
-   - `icon48.png` (48x48)
-   - `icon128.png` (128x128)
+1. Download a zip file of the repository
 3. Open Chrome and go to `chrome://extensions/`
 4. Enable "Developer mode" in the top right
 5. Click "Load unpacked" and select the directory containing these files
@@ -31,56 +28,24 @@ The extension:
    - Substack domain
    - Substack-specific elements
    - Substack CDN resources
-2. Monitors for paywall indicators such as:
+2. Then Monitors for paywall indicators such as:
    - Explicit paywall elements
    - Subscription prompts
    - Locked content markers
 3. Displays a warning banner when a paywall is detected
 
-## Files
+## Main Files
 
 - `manifest.json`: Extension configuration and permissions
 - `content.js`: Core logic for Substack and paywall detection
 - `styles.css`: Styling for the warning banner
-- `icon.svg`: Vector source for extension icons
-
-## Development
-
-To modify the extension:
-1. Make changes to the relevant files
-2. Go to `chrome://extensions/`
-3. Click the refresh icon on the extension card
-4. Changes will be applied immediately
-
-### Testing
-Test the extension on various types of Substack articles:
-- Free articles
-- Paywalled articles
-- Custom domain Substacks
-- Different screen sizes
-- Dark mode
-
-## Troubleshooting
-
-If the extension isn't working:
-1. Ensure all required files are present
-2. Check that the PNG icons have been created
-3. Verify the extension is enabled in Chrome
-4. Try refreshing the extension in Chrome's extension manager
-5. Clear your browser cache if needed
-
-## Known Limitations
-
-- The extension needs to load before it can detect a paywall
-- Some custom-styled Substack sites might need manual checking
-- Dynamic content changes might take a moment to be detected
 
 ## Privacy
 
 This extension:
 - Does not collect any user data
 - Does not modify article content
-- Only runs on web pages
+- Only runs on web pages that have Substack elements
 - Does not require any special permissions beyond page access
 
 ## Contributing
@@ -90,3 +55,7 @@ Feel free to submit issues and enhancement requests!
 ## License
 
 MIT License - feel free to use and modify as needed.
+
+## Legal
+
+Not in any affiliated or endorsed by Substack. All right of the Substack name are Substack's.
