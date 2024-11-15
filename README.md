@@ -2,9 +2,9 @@
 
 > "I read something that went on for like five pages before I hit the paywall and I was absolutely furious and determined never to get suckered like that again, so I introduce to you, the Substack Paywall Warning" 
 
--Paul Crowley
+> -Paul Crowley
 
-This Chrome extension was commisioned by Paul Crowley to show a warning banner when a Substack article has a paywall, helping readers identify premium content before they start reading, only later hitting the paywal and unable to finish the content without subscribing. Substack uses an unually small text of "Paid" and the lack of promienence cna be considered a dark pattern. This extension seeks to remedy that.
+This Chrome extension was commissioned by Paul Crowley to show a warning banner when a Substack article has a paywall, helping readers identify premium content before they start reading, only later hitting the paywall and unable to finish the content without subscribing. Substack uses an unusually small text of "PAID" at the top of articles and the lack of prominence can be considered a dark pattern. This extension seeks to remedy that.
 
 ## Features
 
@@ -58,4 +58,4 @@ MIT License - feel free to use and modify as needed.
 
 ## Legal
 
-Not in any affiliated or endorsed by Substack. All right of the Substack name are Substack's.
+Not in any way affiliated with, endorsed by, or sponsored by Substack Inc. All trademarks, service marks, trade names, and logos referenced herein belong to their respective owners. Their use here is for identification purposes only and does not imply ownership by us or endorsement by them.
