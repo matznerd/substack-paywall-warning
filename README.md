@@ -4,7 +4,8 @@
 
 > -Paul Crowley
 
-This Chrome extension was commissioned by Paul Crowley to show a warning banner when a Substack article has a paywall, helping readers identify premium content before they start reading, only later hitting the paywall and unable to finish the content without subscribing. Substack uses an unusually small text of "PAID" at the top of articles and the lack of prominence can be considered a dark pattern. This extension seeks to remedy that.
+This Chrome extension was commissioned by [Paul Crowley](
+https://ciphergoth.org) to show a warning banner when a Substack article has a paywall, helping readers identify premium content before they start reading, only later hitting the paywall and unable to finish the content without subscribing. Substack uses an unusually small text of "PAID" at the top of articles and the lack of prominence can be considered a dark pattern. This extension seeks to remedy that.
 
 ## Features
 
@@ -16,6 +17,7 @@ This Chrome extension was commissioned by Paul Crowley to show a warning banner 
 ## Installation
 
 1. Download a zip file of the repository
+2. Unzip/decompress it into a folder
 3. Open Chrome and go to `chrome://extensions/`
 4. Enable "Developer mode" in the top right
 5. Click "Load unpacked" and select the directory containing these files
