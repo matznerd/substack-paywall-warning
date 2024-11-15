@@ -15,17 +15,18 @@ This Chrome extension was commissioned by [Paul Crowley](https://x.com/ciphergot
 
 ## Installation
 
-1. Download a zip file of the repository
+1. Download a zip file of the repository.
 
 ![How to download zip](how%20to%20download%20zip.png)
 
-2. Open Chrome and go to `chrome://extensions/`
-3. Enable "Developer mode" in the top right
+2. Then open/unzip/decompress to contents of the file to a folder in a location where it won't be deleted or moved.
+3. Open Chrome and go to `chrome://extensions/`
+4. Enable "Developer mode" in the top right
 
 ![Enable developer mode and load unpacked](enable%20developer%20mode%20and%20then%20click%20%22Load%20unpacked%22%20exetension.png)
 
-4. Click "Load unpacked" and select the directory containing these files
-5. The extension is now installed and active, refresh any open pages to see it working.
+5. Click "Load unpacked" and select the directory containing these files
+6. The extension is now installed and active, refresh any open pages to see it working.
 
 ## How It Works
 
